@@ -24,3 +24,9 @@ html,body{
   }
 }
 
+@media only screen and (min-width:1024px) and (min-height:1050px) {
+  .ipad{
+    flex-direction: column;
+  }
+}
+

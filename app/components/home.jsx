@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    // there is a problem with responsive design adjust it later
+    // ipad uses laptop version, adjust it so that it uses the mobile/tablet version
     <section className='min-h-[calc(100vh-5rem)] flex flex-col justify-start gap-[0.5vh] items-center'>
 
       {/*mobile design*/}
@@ -27,27 +27,31 @@ export default function Home() {
       </h2>
 
       {/*laptop version */}
-      <div className='hidden lg:flex w-[85%] justify-between min-h-[70vh]'>
-        <div className='flex-col grow flex'>
-          <div className='flex flex-col text-[var(--dark-red)] grow justify-end'>
-            <h1 className='font-bold text-[7vh]'>Hello, I am Ayoub</h1>
-            <h1 className='text-[6vh] font-bold w-[50%] '>
+      <div className='hidden lg:flex w-[90%] justify-between min-h-[70vh]'>
+        <div className='flex-col flex'>
+          <div className='flex flex-col text-[var(--dark-red)] grow justify-center pt-[10vh]'>
+            <h1 className='font-bold text-[clamp(48px,4vw,55px)]'>Hello, I am Ayoub</h1>
+            <h1 className='text-[clamp(40px,3vw,50px)] font-bold w-[400px] '>
               A Webdev &
               UI/UX Designer
             </h1>
-            <p className='font-medium text-[3.5vh]'>based in Algeria</p>
-            <p className='font-medium text-[3vh]'>Always experimenting, learning, and leveling up my web skills.</p>
+            <p className='font-medium text-[clamp(2vw,3.5vh,3vw)]'>based in Algeria</p>
+            <p className='font-medium text-[clamp(1.8vw,3vh,2.8vw)]'>Always experimenting, learning, and leveling up my web skills.</p>
 
           </div>
-          <div className='h-[9rem] flex items-center justify-center relative'>
+          <div className='h-[8rem] flex items-center justify-center relative'>
             <div className='border-1 absolute top-[50%] left-[50%] translate-[-50%] bg-[var(--weak-red)] font-semibold text-[4vh] py-[0.3rem] px-[1.5rem] text-[var(--weak-red)] rounded-[0.5rem]'>Explore</div>
             <button className='cursor-pointer translate-[-0.5rem] border-2 text-[var(--dark-red)] font-semibold text-[4vh] py-[0.3rem] px-[1.5rem] rounded-[0.5rem] transition-all duration-300 hover:translate-0'><a href="#About">Explore</a></button>
             
           </div>
         </div>
 
-        <div className='w-[40%] aspect-square flex items-center'>
-          <img src="/pfp_home.png" alt="profile picture"/>
+        <div className='grow flex items-center justify-center'>
+          <img 
+            src="/pfp_home.png" 
+            alt="profile picture"
+            className='max-w-[550px] min-w-[450px] w-full aspect-square'
+          />
         </div>
       </div>
 
