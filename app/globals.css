@@ -11,7 +11,7 @@
   --grey:#343434;
   --light-grey:#F6EAEA;
   --bar-grey:#BCBCBC;
-  --elipse-small:#ECECEC;
+  --elipse-small:#ECECEC; 
 }
 
 
@@ -28,10 +28,25 @@ html,body{
   }
 }
 
-@media only screen and (min-width:1024px) and (max-height:1050px) {
+@media only screen and (min-width:1024px) and (max-height:1200px) {
   .laptop{
     display: flex;
   }
+  .laptop-work{
+    flex-direction: row;
+    padding: 0 3rem;
+  }
+  .laptop-work p{
+    text-align:center
+  }
+  .laptop-work div{
+    align-items: center;
+  }
+  .laptop-work .work-text{
+    max-width: 40%;
+
+  }
+
 }
 
 @media only screen and (min-width:1024px) and (min-height:1050px){

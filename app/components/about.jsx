@@ -10,7 +10,7 @@ const SkillBar=({mobile,skills})=>{
                 {skills.map((item,ind)=>(
                 <li 
                     key={`${item.skill}-${item.level}-${ind}`}
-                    className='min-h-[6vh] flex flex-col'
+                    className='min-h-[6vh] flex flex-col grow-1'
                 >
                     <p className='text-[var(--strong-red)] font-bold px-[1rem] text-[clamp(18px,2.9vh,35px)]'>{item.skill}</p>
                     <div className='relative flex w-[100%] grow-1 items-center justify-center'>
@@ -45,8 +45,8 @@ export default function About() {
   return (
     <section id='About' className='pb-[2rem] gap-[2rem] flex flex-col'>
         {/*mobile version */}
-        <div className='px-[1rem] flex flex-col gap-[1rem] lg:hidden'>
-            <h1 className='text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
+        <div className='flex flex-col gap-[1rem] lg:hidden'>
+            <h1 className='px-[1rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
             <h2 className='font-bold text-[clamp(24px,3.2vh,42px)]'>I am Ayoub Benaziza,</h2>
             <p className='font-bold text-[clamp(18px,2.45vh,35px)]'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
 
@@ -54,9 +54,9 @@ export default function About() {
         <SkillBar mobile={true} skills={skills}/>
             
         {/*laptop version */}
-        <h1 className='px-[1rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] hidden lg:block'>About Me</h1>
+        <h1 className='px-[2rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] hidden lg:block'>About Me</h1>
         <div className='lg:flex px-[1rem] hidden gap-[5rem]'>
-            <div className='w-[25%] flex flex-col gap-[1rem]'>
+            <div className='w-[40%] flex flex-col gap-[1rem]'>
                 <h2 className='font-bold text-[clamp(24px,3.2vh,42px)] text-center'>I am Ayoub Benaziza,</h2>
                 <p className='font-bold text-[clamp(18px,2.45vh,35px)] text-center'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
             </div>
