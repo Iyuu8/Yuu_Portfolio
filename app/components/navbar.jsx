@@ -18,7 +18,7 @@ export default function Navbar() {
                     key={`${section}-${ind}`}
                     className='h-[2rem] pl-[0.5rem] flex justify-start text-[var(--background)] w-full transition-all duration-300 hover:bg-[var(--weak-red)] md:justify-center md:pl-0 font-bold md:hover:bg-transparent'
                 >
-                    <a href={`#${section}`} className='w-full h-full flex items-center md:w-[auto] md:drop-shadow-sm md:text-[1.8ch]'>{section}</a>
+                    <a onClick={()=>setOpen(false)} href={`#${section}`} className='w-full h-full flex items-center md:w-[auto] md:drop-shadow-sm md:text-[1.8ch]'>{section}</a>
                 </li>
             ))}
 

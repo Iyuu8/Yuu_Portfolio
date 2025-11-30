@@ -4,7 +4,7 @@ import React from 'react'
 export default function Home() {
   return (
     // ipad uses laptop version, adjust it so that it uses the mobile/tablet version
-    <section className='min-h-[calc(100vh-5rem)] flex flex-col justify-start gap-[0.5vh] items-center'>
+    <section id='Home' className='min-h-[calc(100vh-5rem)] flex flex-col justify-start gap-[0.5vh] items-center'>
 
       {/*mobile design*/}
       <div className='w-full flex flex-col justify-start gap-[0.5vh] items-center lg:hidden ipad'>
