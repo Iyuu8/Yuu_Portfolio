@@ -21,7 +21,7 @@ const SkillBar=({mobile,skills})=>{
                             style={{width: `${item.level}%`}}
                         ></div>
                         <div 
-                            className='absolute w-[clamp(1rem,3%,2rem)] aspect-square bg-[var(--weak-red)] rounded-[50%] flex items-center justify-center'
+                            className='absolute w-[clamp(1rem,2.5%,2rem)] aspect-square bg-[var(--weak-red)] rounded-[50%] flex items-center justify-center'
                             style={{left:`${item.level+1}%`}}
                             
                         >
@@ -43,7 +43,7 @@ export default function About() {
         {skill:"UI/UX Design",level:85}
     ]
   return (
-    <section id='About' className='pb-[1rem] gap-[2rem] flex flex-col'>
+    <section id='About' className='pb-[2rem] gap-[2rem] flex flex-col'>
         {/*mobile version */}
         <div className='px-[1rem] flex flex-col gap-[1rem] lg:hidden'>
             <h1 className='text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
@@ -55,10 +55,10 @@ export default function About() {
             
         {/*laptop version */}
         <h1 className='px-[1rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] hidden lg:block'>About Me</h1>
-        <div className='lg:flex px-[1rem] hidden gap-[1rem]'>
-            <div className='w-[40%]'>
-                <h2 className='font-bold text-[clamp(24px,3.2vh,42px)]'>I am Ayoub Benaziza,</h2>
-                <p className='font-bold text-[clamp(18px,2.45vh,35px)]'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
+        <div className='lg:flex px-[1rem] hidden gap-[5rem]'>
+            <div className='w-[25%] flex flex-col gap-[1rem]'>
+                <h2 className='font-bold text-[clamp(24px,3.2vh,42px)] text-center'>I am Ayoub Benaziza,</h2>
+                <p className='font-bold text-[clamp(18px,2.45vh,35px)] text-center'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
             </div>
 
             <SkillBar mobile={false} skills={skills}/>
@@ -66,7 +66,7 @@ export default function About() {
 
         </div>
 
-        <p className='font-bold text-[clamp(18px,2.45vh,35px)] px-[1rem]'>My goal is simple, design better, build smarter, and keep moving forward !</p>
+        <p className='font-bold text-[clamp(22px,2.6vh,35px)] px-[1rem] text-center'>My goal is simple, design better, build smarter, and keep moving forward !</p>
         
 
 
