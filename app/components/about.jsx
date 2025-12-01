@@ -45,8 +45,8 @@ export default function About() {
   return (
     <section id='About' className='pb-[2rem] gap-[2rem] flex flex-col'>
         {/*mobile version */}
-        <div className='flex flex-col gap-[1rem] lg:hidden'>
-            <h1 className='px-[1rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
+        <div className='flex flex-col gap-[1rem] lg:hidden px-[1rem]'>
+            <h1 className='text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
             <h2 className='font-bold text-[clamp(24px,3.2vh,42px)]'>I am Ayoub Benaziza,</h2>
             <p className='font-bold text-[clamp(18px,2.45vh,35px)]'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
 
@@ -56,7 +56,7 @@ export default function About() {
         {/*laptop version */}
         <h1 className='px-[2rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] hidden lg:block'>About Me</h1>
         <div className='lg:flex px-[1rem] hidden gap-[5rem]'>
-            <div className='w-[40%] flex flex-col gap-[1rem]'>
+            <div className='w-[40%] flex flex-col gap-[1rem] justify-center'>
                 <h2 className='font-bold text-[clamp(24px,3.2vh,42px)] text-center'>I am Ayoub Benaziza,</h2>
                 <p className='font-bold text-[clamp(18px,2.45vh,35px)] text-center'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
             </div>
