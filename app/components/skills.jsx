@@ -21,7 +21,7 @@ export default function Skills() {
 
     ]
   return (
-    <section className='px-[1rem] pb-[2rem] flex flex-col gap-[clamp(1rem,5vw,4rem)] pt-[1rem]'>
+    <section id="Skills" className='px-[1rem] pb-[2rem] flex flex-col gap-[clamp(1rem,5vw,4rem)] pt-[1rem]'>
         <h1 className='text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] lg:px-[1rem]'>My Skills</h1>
         <div className='flex flex-wrap content-center items-center justify-center  gap-[2rem]'>
             {skills.map((item,ind)=>(

@@ -4,7 +4,7 @@ const SkillBar=({mobile,skills})=>{
     /*${mobile? "md:hidden":"md:flex"}*/
     return(
         <div 
-            className={`bg-[var(--light-grey)] py-[1.8rem] flex flex-col ${mobile? "lg:hidden":"lg:flex lg:w-[100%] rounded-[5px]"} `}
+            className={`bg-[var(--light-grey)] py-[1.8rem] flex flex-col ${mobile? "hide-not-laptop":"laptop w-[100%] rounded-[5px]"} `}
         >
             <ul className='flex flex-col grow-1 gap-[1rem]'>
                 {skills.map((item,ind)=>(
@@ -45,7 +45,7 @@ export default function About() {
   return (
     <section id='About' className='pb-[2rem] gap-[2rem] flex flex-col'>
         {/*mobile version */}
-        <div className='flex flex-col gap-[1rem] lg:hidden px-[1rem]'>
+        <div className='flex flex-col gap-[1rem] hide-not-laptop px-[1rem]'>
             <h1 className='text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)]'>About Me</h1>
             <h2 className='font-bold text-[clamp(24px,3.2vh,42px)]'>I am Ayoub Benaziza,</h2>
             <p className='font-bold text-[clamp(18px,2.45vh,35px)]'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>
@@ -55,7 +55,7 @@ export default function About() {
             
         {/*laptop version */}
         <h1 className='px-[2rem] text-[var(--strong-red)] font-bold text-[clamp(36px,4.6vh,55px)] hidden lg:block'>About Me</h1>
-        <div className='lg:flex px-[1rem] hidden gap-[5rem]'>
+        <div className='laptop px-[1rem] hidden gap-[5rem]'>
             <div className='w-[40%] flex flex-col gap-[1rem] justify-center'>
                 <h2 className='font-bold text-[clamp(24px,3.2vh,42px)] text-center'>I am Ayoub Benaziza,</h2>
                 <p className='font-bold text-[clamp(18px,2.45vh,35px)] text-center'>a frontend developer and UI/UX designer driven by curiosity and precision. I’m building the skills today that will shape the products of tomorrow.</p>

@@ -1,14 +1,14 @@
-'use client'
+"use client";
 import React from 'react'
 import Link from "next/link"
 import { FaBars } from 'react-icons/fa';
 import {useState} from "react"
-import { li } from 'framer-motion/client';
-import {motion, AnimatePresence} from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
+
 import { FaXmark } from 'react-icons/fa6';
 
 export default function Navbar() {
-    const navArr=["Home","About","Skills","Contact"];
+    const navArr=["Home","About","Skills","Work"];
     const [open,setOpen]=useState(false);
 
     const NavContent = ()=>(
