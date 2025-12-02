@@ -9,7 +9,7 @@ export default function Work() {
                 <img src="/YuuQuiz1.png" alt=""/>
             </div>
             <div className='w-[100%] flex flex-col gap-[1.5rem] work-text'>
-                <p className='font-bold text-[clamp(20px,2.6vh,35px)]'>YuuQuiz is a clean and responsive web app that allows the user to create and solve his own quizes, perfect for learning and education.</p>
+                <p className='font-bold text-[clamp(20px,3vh,35px)]'>YuuQuiz is a clean and responsive web app that allows the user to create and solve his own quizes, perfect for learning and education.</p>
                 <a 
                     href="https://github.com/Iyuu8/QuizApp" 
                     className='font-bold text-[var(--strong-red)] underline text-[clamp(2ch,3vh,5ch)] transition-all hover:text-[var(--weak-red)] active:text-[var(---weak-red)]'
